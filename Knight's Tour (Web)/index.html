@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knight's Tour</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="gameArea">
+        <div id="gameBoard">
+            <table id="board" border="1">
+                <tr>
+                    <td class="saddlebrown-tile">
+                        <button class="cell" id="00" onclick="KnightMove(0, 0)">1</button disabled>
+                    </td>
+                    <td class="sandybrown-tile">
+                        <button class="cell" id="01" onclick="KnightMove(0, 1)" disabled></button>
+                    </td>
+                    <td class="saddlebrown-tile">
+                        <button class="cell" id="02" onclick="KnightMove(0, 2)" disabled></button>
+                    </td>
+                    <td class="sandybrown-tile">
+                        <button class="cell" id="03" onclick="KnightMove(0, 3)" disabled></button>
+                    </td>
+                    <td class="saddlebrown-tile">
+                        <button class="cell" id="04" onclick="KnightMove(0, 4)" disabled></button>
+                    </td>
+                    <td class="sandybrown-tile">
+                        <button class="cell" id="05" onclick="KnightMove(0, 5)" disabled></button>
+                    </td>
+                    <td class="saddlebrown-tile">
+                        <button class="cell" id="06" onclick="KnightMove(0, 6)" disabled></button>
+                    </td>
+                    <td class="sandybrown-tile">
+                        <button class="cell" id="07" onclick="KnightMove(0, 7)" disabled></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="sandybrown-tile">
+                        <button class="cell" id="10" onclick="KnightMove(1, 0)" disabled></button>
+                    </td>
+                    <td class="saddlebrown-tile">
+                        <button class="cell" id="11" onclick="KnightMove(1, 1)" disabled></button>
+                    </td>
+                    <td class="sandybrown-tile">
+                        <button class="cell" id="12" onclick="KnightMove(1, 2)" disabled></button>
+                    </td>
+                    <td class="saddlebrown-tile">
+                        <button class="cell" id="13" onclick="KnightMove(1, 3)" disabled></button>
+                    </td>
+                    <td class="sandybrown-tile">
+                        <button class="cell" id="14" onclick="KnightMove(1, 4)" disabled></button>
+                    </td>
+                    <td class="saddlebrown-tile">
+                        <button class="cell" id="15" onclick="KnightMove(1, 5)" disabled></button>
+                    </td>
+                    <td class="sandybrown-tile">
+                        <button class="cell" id="16" onclick="KnightMove(1, 6)" disabled></button>
+                    </td>
+                    <td class="saddlebrown-tile">
+                        <button class="cell" id="17" onclick="KnightMove(1, 7)" disabled></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="saddlebrown-tile">
+                        <button class="cell" id="20" onclick="KnightMove(2, 0)" disabled></button>
+                    </td>
+                    <td class="sandybrown-tile">
+                        <button class="cell" id="21" onclick="KnightMove(2, 1)" disabled></button>
+                    </td>
+                    <td class="saddlebrown-tile">
+                        <button class="cell" id="22" onclick="KnightMove(2, 2)" disabled></button>
+                    </td>
+                    <td class="sandybrown-tile">
+                        <button class="cell" id="23" onclick="KnightMove(2, 3)" disabled></button>
+                    </td>
+                    <td class="saddlebrown-tile">
+                        <button class="cell" id="24" onclick="KnightMove(2, 4)" disabled></button>
+                    </td>
+                    <td class="sandybrown-tile">
+                        <button class="cell" id="25" onclick="KnightMove(2, 5)" disabled></button>
+                    </td>
+                    <td class="saddlebrown-tile">
+                        <button class="cell" id="26" onclick="KnightMove(2, 6)" disabled></button>
+                    </td>
+                    <td class="sandybrown-tile">
+                        <button class="cell" id="27" onclick="KnightMove(2, 7)" disabled></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="sandybrown-tile">
+                        <button class="cell" id="30" onclick="KnightMove(3, 0)" disabled></button>
+                    </td>
+                    <td class="saddlebrown-tile">
+                        <button class="cell" id="31" onclick="KnightMove(3, 1)" disabled></button>
+                    </td>
+                    <td class="sandybrown-tile">
+                        <button class="cell" id="32" onclick="KnightMove(3, 2)" disabled></button>
+                    </td>
+                    <td class="saddlebrown-tile">
+                        <button class="cell" id="33" onclick="KnightMove(3, 3)" disabled></button>
+                    </td>
+                    <td class="sandybrown-tile">
+                        <button class="cell" id="34" onclick="KnightMove(3, 4)" disabled></button>
+                    </td>
+                    <td class="saddlebrown-tile">
+                        <button class="cell" id="35" onclick="KnightMove(3, 5)" disabled></button>
+                    </td>
+                    <td class="sandybrown-tile">
+                        <button class="cell" id="36" onclick="KnightMove(3, 6)" disabled></button>
+                    </td>
+                    <td class="saddlebrown-tile">
+                        <button class="cell" id="37" onclick="KnightMove(3, 7)" disabled></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="saddlebrown-tile">
+                        <button class="cell" id="40" onclick="KnightMove(4, 0)" disabled></button>
+                    </td>
+                    <td class="sandybrown-tile">
+                        <button class="cell" id="41" onclick="KnightMove(4, 1)" disabled></button>
+                    </td>
+                    <td class="saddlebrown-tile">
+                        <button class="cell" id="42" onclick="KnightMove(4, 2)" disabled></button>
+                    </td>
+                    <td class="sandybrown-tile">
+                        <button class="cell" id="43" onclick="KnightMove(4, 3)" disabled></button>
+                    </td>
+                    <td class="saddlebrown-tile">
+                        <button class="cell" id="44" onclick="KnightMove(4, 4)" disabled></button>
+                    </td>
+                    <td class="sandybrown-tile">
+                        <button class="cell" id="45" onclick="KnightMove(4, 5)" disabled></button>
+                    </td>
+                    <td class="saddlebrown-tile">
+                        <button class="cell" id="46" onclick="KnightMove(4, 6)" disabled></button>
+                    </td>
+                    <td class="sandybrown-tile">
+                        <button class="cell" id="47" onclick="KnightMove(4, 7)" disabled></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="sandybrown-tile">
+                        <button class="cell" id="50" onclick="KnightMove(5, 0)" disabled></button>
+                    </td>
+                    <td class="saddlebrown-tile">
+                        <button class="cell" id="51" onclick="KnightMove(5, 1)" disabled></button>
+                    </td>
+                    <td class="sandybrown-tile">
+                        <button class="cell" id="52" onclick="KnightMove(5, 2)" disabled></button>
+                    </td>
+                    <td class="saddlebrown-tile">
+                        <button class="cell" id="53" onclick="KnightMove(5, 3)" disabled></button>
+                    </td>
+                    <td class="sandybrown-tile">
+                        <button class="cell" id="54" onclick="KnightMove(5, 4)" disabled></button>
+                    </td>
+                    <td class="saddlebrown-tile">
+                        <button class="cell" id="55" onclick="KnightMove(5, 5)" disabled></button>
+                    </td>
+                    <td class="sandybrown-tile">
+                        <button class="cell" id="56" onclick="KnightMove(5, 6)" disabled></button>
+                    </td>
+                    <td class="saddlebrown-tile">
+                        <button class="cell" id="57" onclick="KnightMove(5, 7)" disabled></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="saddlebrown-tile">
+                        <button class="cell" id="60" onclick="KnightMove(6, 0)" disabled></button>
+                    </td>
+                    <td class="sandybrown-tile">
+                        <button class="cell" id="61" onclick="KnightMove(6, 1)" disabled></button>
+                    </td>
+                    <td class="saddlebrown-tile">
+                        <button class="cell" id="62" onclick="KnightMove(6, 2)" disabled></button>
+                    </td>
+                    <td class="sandybrown-tile">
+                        <button class="cell" id="63" onclick="KnightMove(6, 3)" disabled></button>
+                    </td>
+                    <td class="saddlebrown-tile">
+                        <button class="cell" id="64" onclick="KnightMove(6, 4)" disabled></button>
+                    </td>
+                    <td class="sandybrown-tile">
+                        <button class="cell" id="65" onclick="KnightMove(6, 5)" disabled></button>
+                    </td>
+                    <td class="saddlebrown-tile">
+                        <button class="cell" id="66" onclick="KnightMove(6, 6)" disabled></button>
+                    </td>
+                    <td class="sandybrown-tile">
+                        <button class="cell" id="67" onclick="KnightMove(6, 7)" disabled></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="sandybrown-tile">
+                        <button class="cell" id="70" onclick="KnightMove(7, 0)" disabled></button>
+                    </td>
+                    <td class="saddlebrown-tile">
+                        <button class="cell" id="71" onclick="KnightMove(7, 1)" disabled></button>
+                    </td>
+                    <td class="sandybrown-tile">
+                        <button class="cell" id="72" onclick="KnightMove(7, 2)" disabled></button>
+                    </td>
+                    <td class="saddlebrown-tile">
+                        <button class="cell" id="73" onclick="KnightMove(7, 3)" disabled></button>
+                    </td>
+                    <td class="sandybrown-tile">
+                        <button class="cell" id="74" onclick="KnightMove(7, 4)" disabled></button>
+                    </td>
+                    <td class="saddlebrown-tile">
+                        <button class="cell" id="75" onclick="KnightMove(7, 5)" disabled></button>
+                    </td>
+                    <td class="sandybrown-tile">
+                        <button class="cell" id="76" onclick="KnightMove(7, 6)" disabled></button>
+                    </td>
+                    <td class="saddlebrown-tile">
+                        <button class="cell" id="77" onclick="KnightMove(7, 7)" disabled></button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="game-settings">
+            <button id="startBtn" onclick="Start()">Start</button>
+            <button id="restartBtn" onclick="Restart()">Restart</button>
+            <button id="solveBtn" onclick="Solve()">Solve</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

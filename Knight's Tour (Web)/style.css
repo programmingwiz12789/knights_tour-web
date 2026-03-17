@@ -1,0 +1,96 @@
+#gameArea {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    background-color: sienna;
+}
+
+#gameBoard {
+    position: relative;
+    float: left;
+    width: 36%;
+    height: 80%;
+    top: 10%;
+    left: 30%;
+}
+
+#board {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+#board tr td {
+    position: relative;
+    width: 12.5%;
+    height: 12.5%;
+}
+
+.saddlebrown-tile {
+    background-color: saddlebrown;
+}
+
+.sandybrown-tile {
+    background-color: sandybrown;
+}
+
+.cell {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    font-size: 200%;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    border-color: transparent;
+}
+
+#game-settings {
+    position: relative;
+    float: right;
+    width: 13%;
+    height: 40%;
+    top: 7%;
+    right: 20%;
+}
+
+#startBtn {
+    position: relative;
+    width: 63%;
+    height: 45%;
+    top: 39%;
+    left: 50%;
+    font-size: 243%;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
+
+#restartBtn {
+    position: relative;
+    width: 63%;
+    height: 45%;
+    top: 41%;
+    left: 50%;
+    font-size: 160%;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
+
+#solveBtn {
+    position: relative;
+    width: 63%;
+    height: 45%;
+    top: 43%;
+    left: 50%;
+    font-size: 205%;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
